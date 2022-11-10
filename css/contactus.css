@@ -92,6 +92,7 @@ a:link{
     align-items: center;
     list-style: none;
     margin-top: 1.2%;
+    font-size: 0.92em;
 }
 
 #categories ul li{
@@ -160,16 +161,23 @@ a:link{
     border-left: 3px solid gold;
 }
 
-#categories ul li:hover .subcat ul li a{
+#categories ul li .subcat ul li a{
     color: #000;
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
 }
 
-#categories ul li:hover .subcat ul li a:hover{
-    color: #000;
+#categories ul li .subcat ul li a:hover{
+    color: rgb(255, 255, 255);
     /* text-decoration: underline; */
     text-underline-offset: 6px;
+    font-weight: 700;
 }
+
+
+
+
+
+/* ***************************# Contact form #********************** */
 
 /* 
 #fp-img{
@@ -293,3 +301,108 @@ textarea{
   top: 0%;
   background-color: #000;
 }
+
+
+
+
+/* **********************************# Footer #************************************* */
+
+/* Fotter ki css */
+footer {
+    padding: 23px 0;
+    background-color: #000;
+    margin-top: -50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 23px;
+}
+.col-4{
+    margin: 50px 23px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col-4 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.col-4 ul li{
+    margin: 8px 0;
+}
+.col-4 ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.col-4 ul li a:hover{
+    color: rgb(255, 119, 0);
+}
+.col-4 span{
+    font-size: 1.7em;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: fit-content;
+    font-weight: 900;
+}
+.col-4 img{
+    width: 253px;
+}
+.col-4 p{
+    margin-top: 30px;
+    text-align: left;
+    font-family: 'New Tegomin', serif;
+}
+.col-4:nth-child(4){
+    align-self: center;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .social li a{
+    color: white;
+    margin: 23px 23px 0 0 ;
+    font-size: 23px;
+}
+footer .copy p {
+    text-align: center;
+    padding: 20px 0 0 0;
+    border-top: 1px solid white;
+    width: 90vw;
+}
+.copy .social li .fb:hover {
+    color: #3b5998;
+}
+.copy .social li .insta:hover {
+    color: #E4405F;
+}
+.copy .social li .twitter:hover {
+    color: #1DA1F2;
+}
+.copy .social li .lnk:hover {
+    color: #0077b5;
+}
+
+
+
