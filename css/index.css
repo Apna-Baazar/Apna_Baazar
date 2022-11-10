@@ -181,15 +181,16 @@ a:link{
     border-left: 3px solid gold;
 }
 
-#categories ul li:hover .subcat ul li a{
+#categories ul li .subcat ul li a{
     color: #000;
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
 }
 
-#categories ul li:hover .subcat ul li a:hover{
-    color: #000;
+#categories ul li .subcat ul li a:hover{
+    color: rgb(255, 255, 255);
     /* text-decoration: underline; */
     text-underline-offset: 6px;
+    font-weight: 700;
 }
 
 
