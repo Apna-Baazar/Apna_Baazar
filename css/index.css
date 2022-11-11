@@ -9,6 +9,8 @@
     font-family: 'Poppins', serif;
     padding: 0px 0px;
     box-sizing: border-box;
+
+    /* overflow: hidden; */
 }
 
 header{
@@ -57,8 +59,8 @@ a:link{
 }
 
 .search button:hover{
-    border: 2px solid rgb(255, 119, 0);
-    background-color: rgb(255, 119, 0);
+    border: 2px solid rgb(255, 153, 64);
+    background-color: rgb(255, 153, 64);
     color: white;
 }
 
@@ -83,30 +85,6 @@ a:link{
 .navimg{
     padding: 0px 20px;
 }
-
-/*
-.tooltip {
-    position: relative;
-    display: flex;
-}
-
-.tooltip .tooltiptext {
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    visibility: hidden;
-    /* Position the tooltip 
-    position: absolute;
-    z-index: 1;
-}
-
-.tooltip:hover .tooltiptext{
-    visibility: visible;
-} */
-
 
 
 #categories ul{
@@ -192,6 +170,108 @@ a:link{
     text-underline-offset: 6px;
     font-weight: 700;
 }
+
+
+
+/* *********************Hamburger Menu********************* */
+
+#menu-icon {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 13px;
+    right: 5%;
+    visibility: hidden;
+}
+
+#menu-icon img{
+    width: 37px;
+}
+
+#close-icon {
+    cursor: pointer;
+    /* width: 10px;
+    height: 10px; */
+    position: absolute;
+    top: 30px;
+    right: 40px;
+
+    display: none;
+}
+
+#close-icon img{
+    width: 22px;
+}
+
+#close-icon{
+    cursor: pointer;
+}
+
+#menu-content{
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* width: 300px; */
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* for transition */
+    width: 0%;
+}
+
+#menu-category-list{
+    list-style-type: none;
+    
+    /* for transition */
+    display: none;
+
+}
+
+#menu-content ul li{
+    padding: 10px 0px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s ease;
+
+}
+
+#menu-content ul li:hover{
+    color: rgb(255, 153, 64);
+    transform: translateY(-2px);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,7 +430,7 @@ main{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 3% 0px 20px 0px;
-    border-bottom: 5px solid rgb(255, 119, 0);
+    border-bottom: 5px solid rgb(255, 153, 64);
     width: fit-content;
     font-weight: 900;
     font-size: 2em;
@@ -450,7 +530,7 @@ main{
 /* ****************************card 3*********************************** */
 .price3 {
     background-color: rgb(255, 170, 0);
-    /* background-color: rgb(255, 119, 0); */
+    /* background-color: rgb(255, 153, 64); */
     width: 85px;
     height: 25px;
     /* position: relative; */
@@ -475,7 +555,7 @@ main{
 
 .brand {
     background-color: rgba(138, 138, 138, 0.628);
-    /* background-color: rgb(255, 119, 0); */
+    /* background-color: rgb(255, 153, 64); */
     width: 100%;
     height: 25px;
     /* position: relative; */
@@ -876,9 +956,13 @@ footer {
     color: white;
     text-decoration: none;
     transition: all 0.3s ease;
+    transform: translateY(0px);
 }
 .col-4 ul li a:hover{
-    color: rgb(255, 119, 0);
+    color: rgb(255, 153, 64);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transform:translateY(5px);
 }
 .col-4 span{
     font-size: 1.7em;
@@ -945,43 +1029,143 @@ footer .copy p {
 
 
 
+/* ###################################################* Responsive site *################################################## */
+@media screen and (max-width: 1150px)and (min-width:1100px){
+    #categories ul li{
+        font-size: 0.85rem;
+    }
+}    
+
+@media screen and (max-width: 1100px)and (min-width:600px){
+    
+    #menu-icon {
+        visibility: visible;
+    }
+
+    #categories {
+        display: none;
+    }
+
+    .search{
+        width: 35%;
+    }
+    
+    .search input{
+        padding: 5px 10px;
+    }
+
+    .search button{
+        width: 79px;
+        padding: 2px 5px;
+    }
+    
+    #menu-content{
+        font-size: 0.85rem;
+    }
+
+    .col-4 img{
+        width: 200px;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-/************************EXTRA for slider********************/
-/* 
-#outer {
-    width: 100%;
-    height: fit-content;
-    position: absolute;
-    left: 0;
-    top: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    
+    /* of the profile card */
+    .container{
+        width: 85vw;
+    }
+    
 }
 
-#product{
-    width: max-content;
-    height: min-content;
+
+@media screen and (max-width: 900px) {
+    
+    #categories ul li{
+        font-size: .75rem;
+    }
+    
+    #menu-icon {
+        visibility: visible;
+    }
+
+    #categories {
+        display: none;
+    }
+
+    .search{
+        width: 30%;
+    }
+    
+    .search input{
+        padding: 5px 10px;
+    }
+    
+    .search button{
+        font-size: 0.7rem;
+        width: 80px;
+        padding: 2px 1px;
+    }
+    
+    #menu-content{
+        font-size: 0.85rem;
+    }
+
+
+    /* of the profile card */
+    .container{
+        width: 81vw;
+    }
+
+    /* of the footer */
+
+    .content{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .col-4{
+        margin: 20px;
+        width: 75%;
+    }
+
+    .col-4 span{
+        font-size: 1.5rem;
+    }
+    .col-4 p{
+        text-align: center;
+    }
+
+    .col-4 img{
+        width: 253px;
+    }
+
+
+
+
+    .carousel {
+        margin-top: 40px;
+        /* z-index: -1; */
+    }
+    .carousel-cell {
+        width: 95%;
+        border-radius: 5px;
+        z-index: 0;
+    }
+
+    
 }
 
-#product img{
-    width: 50%;
-    border: 10px solid white;
-    border-radius: 15px;
-    box-shadow: 1px 1px 5px;
+@media screen and (max-width: 500px){
+
+    main {
+        margin-top: -90px;
+    }
+
+    .search{
+        width: 30%;
+    }
+    
+    .search input{
+        padding: 5px 10px;
+    }
 }
- */
