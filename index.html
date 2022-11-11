@@ -28,7 +28,9 @@
                     <img src="images/user.png" alt="account">
                 </a>
             </div>
+            
         </nav>
+        
 
         <!-- categories bar that is below the navigation bar -->
         <div id="categories">
@@ -58,7 +60,7 @@
                 
                 </li>
 
-                <li><a href="homeapp.html">Home applicances</a>
+                <li><a href="homeapp.html">Home appliances</a>
                 
                     <div class="subcat"  style="background-image: url('images/2.png'); background-size: contain;">
                         <ul>
@@ -164,6 +166,37 @@
             <div class="carousel-cell"><a href="#"><img src="images/banner (7).png"></a></div>
         </div>
     </header>
+
+
+
+<!-- Extra menu for the responsive site -->
+
+    <div id="menu-icon">
+        <img src="images/menu.png" alt="" onclick="openMenu()">
+    </div>
+
+
+    <div id="menu-content">
+        <div id="close-icon">
+            <img src="images/close.png" alt="" onclick="closeMenu()">
+        </div>
+        
+        
+        <ul id="menu-category-list">
+            <a href="#"><li>Electronics</li></a>
+            <a href="#"><li>Baby products</li></a>
+            <a href="#"><li>Home appliances</li></a>
+            <a href="#"><li>Fashion</li></a>
+            <a href="#"><li>Accessories</li></a>
+            <a href="#"><li>Beauty</li></a>
+            <a href="#"><li>Books & Stationery</li></a>
+            <a href="#"><li>Mobiles</li></a>
+            <a href="#"><li>Sports</li></a>
+            <a href="#"><li>Best Sellers</li></a>
+
+        </ul>
+    </div>
+
 
 
 
@@ -731,7 +764,7 @@
                         <div class="card">
                             <div class="our-team">
                                 <div class="picture">
-                                    <img class="img-fluid" src="sunil1.jpg">
+                                    <img class="img-fluid" src="images/Deepthi2.jpeg">
                                 </div>
                                 <div class="team-content">
                                     <h3 class="name">Yellika Deepti</h3>
@@ -771,7 +804,7 @@
                         <div class="card">
                             <div class="our-team">
                                 <div class="picture">
-                                    <img class="img-fluid" src="sunil1.jpg">
+                                    <img class="img-fluid" src="images/Siddharth.jpeg">
                                 </div>
                                 <div class="team-content">
                                     <h3 class="name">Siddharth More</h3>
@@ -830,7 +863,7 @@
                 </ul>
             </div>
             <div class="col-4">
-                <img src="images/logonew.png" alt="" width="253px">
+                <img src="images/logonew.png" alt="footer-logo">
                 <p>Apna Baazar, providing you the best quality products.</p>
             </div>
         </div>
@@ -853,4 +886,30 @@
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+<script>
+
+    function openMenu(){
+        document.getElementById("menu-content").style.width="300px";
+        document.getElementById("menu-category-list").style.display="contents";
+        
+        // for transition
+        document.getElementById("menu-content").style.transition="all 0.5s ease";
+
+        // for the close button
+        
+        document.getElementById("close-icon").style.display="inline-block";
+    }
+    
+    function closeMenu(){
+        document.getElementById("menu-content").style.width="0px";
+        document.getElementById("menu-category-list").style.display="none";
+        
+        // for transition
+        // document.getElementById("menu-content").style.transition="all 0.5s ease";
+
+        // for the close button
+        document.getElementById("close-icon").style.display="none";
+    }
+
+</script>
 </html>
