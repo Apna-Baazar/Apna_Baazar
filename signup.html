@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+
+    <title>Signup</title>
+</head>
+<body>
+
+<div id="leftHalf"></div>
+
+<div id="form-container">
+    
+    <center>
+    <img src="images/logob.png" alt="Logo" name="logo" style="align-content: center;">
+
+    <br>
+
+    <h1>Welcome to Apna Baazar!</h1>
+    </center>
+    <br>
+
+    <div id="form">   
+        <form>
+
+            <!-- <fieldset> -->
+                <!-- <legend>Name</legend> -->
+            
+                <label>Name</label>
+                <br>
+                <input type="text" placeholder="Enter First Name..." autofocus required>
+                <input type="text" placeholder="Enter Last Name..." required>
+
+                <br><br>
+                
+            <!-- </fieldset> -->
+
+
+            <!-- <fieldset>
+            
+                <legend>Extra Information</legend> -->
+
+                <label>Gender</label>
+                <br>
+                <select style="width: 100%;" required>
+                    <option value="select" selected disabled hidden>Select</option>
+                    <option value="male">Male</option>    
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label>Email</label>
+                <br>
+                <input type="email" placeholder="Enter your Email..." style="width: 100%;" required>
+
+                <br><br>
+
+                <label>Phone Number</label>
+                <br>
+                <input type="tel" placeholder="Enter Phone Number..." style="width: 100%;"  required>
+
+                <br><br>
+
+                <table>
+                    <tr>
+                        <Label>Password</Label>
+                        <td><input type="password" placeholder="Enter Password..." style="width: 85%;"  required></td>
+                        <td><input type="password" placeholder="Confirm Password..." style="width: 100%;"  required></td>
+                    </tr>
+                </table>
+
+                <br><br>
+
+            <!-- </fieldset> -->
+            <center>
+                <input type="checkbox" name="t&c" id="t&c">
+                I Accept<a href="t&c.html"> Terms and Condition</a>
+            </center>
+
+
+            <br>
+            
+            <input type="submit" value="Signup">
+
+            <br><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+</body>
+</html>

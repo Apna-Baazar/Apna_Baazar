@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNAME- Apna Baazar</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar">
+            <img src="images/logoLongB.png" alt="logo">
+            <div class="search">
+                <input type="text" placeholder="Search for products, brands, and more...">
+                <button>Search</button>
+            </div>
+            <div class="cart-acc  tooltip">
+                <a href="#" class="navimg">
+                    <img src="images/bag.png" alt="shopping_cart">
+                    <!-- <span  class="tooltiptext">Shopping Cart</span> -->
+                </a>
+                <a href="" class="navimg">
+                    <img src="images/user.png" alt="account">
+                </a>
+            </div>
+            
+        </nav>
+        
+
+        <!-- categories bar that is below the navigation bar -->
+        <div id="categories">
+            <ul>
+                <li><a href="electronics.html" class="cate">Electronics</a>
+                
+                    <div class="subcat" style="background-image: url('images/6.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Camera</a></li>
+                            <li><a href="#">Computer & laptop</a></li>
+                            <li><a href="#">Smartwatches</a></li>
+                            <li><a href="#">Speakers and Bluetooth</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="babyproducts.html">Baby Products</a>
+                
+                    <div class="subcat"  style="background-image: url('images/1.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Oils & powder</a></li>
+                            <li><a href="#">Diapers</a></li>
+                            <li><a href="#">Baby's Clothing</a></li>
+                            <li><a href="#">Toys</a></li>
+                        </ul>
+                    </div>
+                
+                </li>
+
+                <li><a href="homeapp.html">Home appliances</a>
+                
+                    <div class="subcat"  style="background-image: url('images/2.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Furniture</a></li>
+                            <li><a href="#">Cleaning Supplies</a></li>
+                            <li><a href="#">Gardening</a></li>
+                            <li><a href="#">Home Decor</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="fashion.html">Fashion</a>
+                
+                    <div class="subcat"  style="background-image: url('images/3.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="accessories.html">Accessories</a>
+                
+                    <div class="subcat"  style="background-image: url('images/6.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Bangles</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                            <li><a href="#">Chains</a></li>
+                            <li><a href="#">Earrings</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="beauty.html">Beauty</a>
+                    
+                    <div class="subcat"  style="background-image: url('images/4.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Body Lotion</a></li>
+                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Face Care</a></li>
+                            <li><a href="#">Hair Care</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="books.html">Books & Stationery</a>
+                
+                    <div class="subcat"  style="background-image: url('images/5.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">School & Office</a></li>
+                            <li><a href="#">Academic</a></li>
+                            <li><a href="#">Language & Literature</a></li>
+                            <li><a href="#">Competitive</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="mobiles.html">Mobiles</a>
+                
+                    <div class="subcat"  style="background-image: url('images/7.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Viva</a></li>
+                            <li><a href="#">Xiomi</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="sports.html">Sports</a>
+                    
+                    <div class="subcat"  style="background-image: url('images/8.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Cricket</a></li>
+                            <li><a href="#">Football</a></li>
+                            <li><a href="#">Badminton</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="bestsellers.html" >Best Sellers</a>
+                    <div class="subcat" style="background-image: url('images/10.png'); background-size: contain;">
+                        <ul>
+                            <li><a href="#">Page</a></li>
+                            <li><a href="#">Under</a></li>
+                            <li><a href="#">Extreme</a></li>
+                            <li><a href="#">Construction</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+        
+    <!-- Extra menu for the responsive site -->
+
+    <div id="menu-icon">
+        <img src="images/menu.png" alt="" onclick="openMenu()">
+    </div>
+
+
+    <div id="menu-content">
+        <div id="close-icon">
+            <img src="images/close.png" alt="" onclick="closeMenu()">
+        </div>
+        
+        
+        <ul id="menu-category-list">
+            <a href="#"><li>Electronics</li></a>
+            <a href="#"><li>Baby products</li></a>
+            <a href="#"><li>Home appliances</li></a>
+            <a href="#"><li>Fashion</li></a>
+            <a href="#"><li>Accessories</li></a>
+            <a href="#"><li>Beauty</li></a>
+            <a href="#"><li>Books & Stationery</li></a>
+            <a href="#"><li>Mobiles</li></a>
+            <a href="#"><li>Sports</li></a>
+            <a href="#"><li>Best Sellers</li></a>
+
+        </ul>
+    </div>
+
+
+
+<main>
+    <div class="product-img">
+        <img src="images/Products/baby_lotion (2).jpg" alt="">
+    </div>
+    <div class="product-name">
+        Baby Dove Rich Moisture Nourishing Baby Lotion 400 ml, With Moisturising Cream, Gentle Care for Baby's Soft Skin 
+    </div>
+    <div class="product-price">
+        <!-- calculate the price after discount -->
+        <span>&#x20b9 346</span>
+        
+        <span class="product-discount">(1% Off)</span>
+        <br>
+        <!-- import MRP from the database -->
+        <span>MRP &#x20b9 350</span>
+
+    </div>
+    <div class="product-review">
+        Average Review: 4.5 &#x2605 
+    </div>
+    <div class="product-description">
+        <h3>Description:</h3>
+        Dove Nourishing baby Lotion Rich Moisture deeply  mositurizes skin 24 hours. 
+        Your baby's skin is beautiful - but as a mother, you known that little one can get dry skin that needs extra special care. 
+        Our unique Rich Moisture Nourishing Baby Lotion is pH neutral, soothes dry skin from the 1st use and provides 24 hours of moisture to leave baby's skin extra soft and delicately scented *Fragrance develped for baby's delicate skkin *Dermatologist & pediatrician tested within the stratum corneum.
+        
+    </div>
+
+    <div class="cart-button">
+        <button class="addtocart">&#x1F45C; Add to cart</button>
+    </div>
+
+    <div class="buy-button">
+        <button class="buynow">&#x1F6D2; Buy now</button>
+    </div>
+    
+
+    <div class="faq">
+        <h1>Faqs:</h1>
+        <br>
+        <b>1.Q:</b>  Is it fragrance free?
+        <br>
+        <b>A:</b>Yes
+        <br><br>
+
+        <b>2.Q:</b>  Can I apply it in Winter?
+        <br>
+        <b>A:</b>Yes..very nice product also used in winter for babies
+
+        <br><br>
+
+        <b>3.Q:</b>  Can I apply the cream on the face?
+        <br>
+        <b>A:</b>yes
+
+        <br><br>
+
+        <b>4.Q:</b>  How to use?
+        <br>
+        <b>A:</b>apply on babies body after bath, with damp body it will give better result..
+
+        <br><br>
+
+        <b>5.Q:</b>  Is this chemical free?
+        <br>
+        <b>A:</b>Pure, Gentle and Mild cream
+    </div>
+
+
+    <!-- <span class="slider-heading">Electronics</span> -->
+    <div class="outer max-width">
+
+        <!-- <div class="leftArrow" onclick="moveLeft()">&#8592</div>
+        <div class="rightArrow" onclick="moveRight()">&#8594</div> -->
+
+
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/computer (1).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 68,490</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>34% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>Lenovo Ideapad 3 AMD Ryzen 5 5500U 15.6" (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Backlit Keyboard/2Yr Warranty/Arctic Grey/1.65Kg), 82KU017KIN</span>
+            </div>
+
+        </a>
+
+
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/computer (2).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 41,899</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>38% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>Radiant Electro 18.5 inches All in One Gamming Computer Set (Intel-Core i5 Processor/8 GB RAM DDR3/HDD 1 Tb /18.5" Monitor/120 ssd/Keyboard/Mouse/Windows 10/MS Office) with One Year Warranty_06</span>
+            </div>
+            
+        </a>
+
+
+        <!-- Experiment card 3 -->
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/computer (3).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 1,19,900</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>30% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>2022 Apple MacBook Air Laptop with M2 chip: 34.46 cm (13.6-inch) Liquid Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera. Works with iPhone/iPad; Space Grey</span>
+            </div>
+            
+        </a>
+
+
+        <!-- Experiment card 4 -->
+
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/computer (4).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 71,990</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>31% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>ASUS TUF Gaming A15, 15.6-inch (39.62 cms) FHD 144Hz, AMD Ryzen 5 4600H, 4GB NVIDIA GeForce GTX 1650, Gaming Laptop (8GB/512GB SSD/Windows 11/Black/2.3 Kg), FA506IHRZ-HN111W</span>
+            </div>
+            
+        </a>
+        
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/computer (5).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 26,633</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>14% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>HP Slim Tower Desktop PC Intel Celeron G5905(8GB RM/1TB HDD/Black Wired Mouse & Keyboard/Intel UHD Graphics/Win 11/MS Office/Jet Black), S01-pF2237in</span>
+            </div>
+            
+        </a>
+
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/speaker (1).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 2,999</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>37% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>JBL Go 2, Wireless Portable Bluetooth Speaker with Mic, JBL Signature Sound, Vibrant Color Options with IPX7 Waterproof & AUX (Black)</span>
+            </div>
+            
+        </a>
+        
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/speaker (2).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 1,999</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>50% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>JMi Outdoor Bluetooth Speaker (5W) Up to 20 Hours Battery Life, Dynamic Sound Effect, Bluetooth 5.0, IPX5 Splash Proof, Compact & Premium Mesh Design</span>
+            </div>
+            
+        </a>
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/speaker (3).jpg" alt="" class="image-resize"></div>
+            
+            <div class="price">
+                <span>&#x20b9; 29,999</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>23% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>Marshall Acton II 60 Watt Wireless Bluetooth Speaker (Black), (MRL1001900)</span>
+            </div>
+        </a>
+        
+        <a class="inner" href="product.html" target="_blank">
+            <div class="img-div"><img src="images/Products/speaker (4).jpg" alt="" class="image-resize"></div>
+
+            <div class="price">
+                <span>&#x20b9; 2,990</span>
+            </div>
+
+            <!-- <div class="brand">
+                <span>Apple</span>
+            </div> -->
+
+            <div class="discount">
+                <span>67% Off</span>
+            </div>
+
+            <div class="product-name">
+                <span>boAt Stone 170 with 5W Speaker Bluetooth V4.2 and a SD Card Slot, with a Playback time of 6 Hours, IPX 6 Water Resistant Design (Black)</span>
+            </div>
+            
+        </a>
+    </div>
+
+</main>
+
+
+    
+
+
+
+
+
+
+
+
+    <!-- Footer Section-->
+
+    <footer>
+        <div class="content">
+            <div class="col-4">
+                <span>Contact Us</span>
+                <ul>
+                    <li><a href="tel: 8094397433">+91 8094397433</a></li>
+                    <li> <a href="mailto: apna.baazar.2022@gmail.com">apna.baazar.2022@gmail.com</a></li>
+                    <li> <a href=""></a> <b>Hindustan</b></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span>Our Services</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <span>Quick Links</span>
+                <ul>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Hire An Expert</a></li>
+                    <li><a href="t&c.html">Terms & Conditions</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <img src="images/logonew.png" alt="footer-logo">
+                <p>Apna Baazar, providing you the best quality products.</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy; 2022 Apna Baazar&trade; | All rights reserved</p>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/" class="fa fa-facebook fb" aria-hidden="true"></a>
+                </li>
+                <li><a href="https://twitter.com/?lang=en-in" class="fa fa-twitter twitter"
+                        aria-hidden="true"></a></li>
+                <li><a href="www.google.co.in" class="fa fa-instagram insta" aria-hidden="true"></a></li>
+                <li><a href="https://in.linkedin.com" class="fa fa-linkedin lnk" aria-hidden="true"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>
